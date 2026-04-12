@@ -18,9 +18,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Altiura — 561 Grand Ave, Leonia",
+  title: "Altiura — Residential Leasing, New Jersey",
   description:
-    "A luxury multi-family residence in Leonia, NJ. 9 bedrooms, 3 bathrooms across 4 floors of living space.",
+    "Curated residential rentals across Bergen County, NJ. Luxury multi-family homes, condos, and townhouses.",
 };
 
 export default function RootLayout({
