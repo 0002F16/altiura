@@ -47,8 +47,10 @@ export default function HomePage() {
         l.state.toLowerCase().includes(q);
       const matchesBeds =
         beds === "any" || l.beds >= parseInt(beds);
+      const priceNumber = typeof l.price === "number" ? l.price : null;
+      const hasPrice = priceNumber !== null && priceNumber > 0;
       const matchesPrice =
-        maxPrice === "any" || l.price <= parseInt(maxPrice);
+        maxPrice === "any" || !hasPrice || priceNumber <= parseInt(maxPrice);
       const matchesType = type === "any" || l.type === type;
       return matchesQuery && matchesBeds && matchesPrice && matchesType;
     });
@@ -193,10 +195,18 @@ export default function HomePage() {
                   </h2>
                   <div className="flex items-baseline justify-between border-t border-black/6 pt-4">
                     <p className="font-heading text-xl tracking-tightest font-light">
-                      ${listing.price.toLocaleString()}
-                      <span className="font-body text-[9px] tracking-[0.2em] uppercase text-neutral-400 ml-1.5">
-                        / mo
-                      </span>
+                      {typeof listing.price === "number" && listing.price > 0 ? (
+                        <>
+                          ${listing.price.toLocaleString()}
+                          <span className="font-body text-[9px] tracking-[0.2em] uppercase text-neutral-400 ml-1.5">
+                            / mo
+                          </span>
+                        </>
+                      ) : (
+                        <span className="font-body text-[9px] tracking-[0.25em] uppercase text-neutral-400">
+                          Inquire
+                        </span>
+                      )}
                     </p>
                     <p className="font-body text-[9px] tracking-[0.2em] uppercase text-neutral-300">
                       {listing.beds} bd &middot; {listing.baths} ba

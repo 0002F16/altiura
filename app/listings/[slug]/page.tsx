@@ -30,6 +30,10 @@ export default async function ListingPage({
   const listing = listings.find((l) => l.slug === slug);
   if (!listing) notFound();
 
+  const priceNumber = typeof listing.price === "number" ? listing.price : null;
+  const hasPrice = priceNumber !== null && priceNumber > 0;
+  const priceText = hasPrice ? `$${priceNumber.toLocaleString()} / Month` : "Inquire";
+
   const specs = [
     { label: "Type", value: listing.type },
     { label: "Floors", value: listing.floors },
@@ -48,7 +52,7 @@ export default async function ListingPage({
         <div className="flex items-center justify-between md:flex-col md:items-end gap-4 md:gap-3 px-6 py-4 md:px-10 md:py-8">
           <div className="md:text-right">
             <p className="font-heading text-2xl md:text-3xl tracking-tightest font-light">
-              ${listing.price.toLocaleString()} / Month
+              {priceText}
             </p>
             <p className="font-body text-[9px] tracking-[0.25em] uppercase text-neutral-400 mt-0.5">
               For Rent

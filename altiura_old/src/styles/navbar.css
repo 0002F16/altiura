@@ -1,0 +1,146 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-size: 1.2em;
+    height: 60px;
+    background: rgba(22, 22, 22, 0.55);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed; 
+    top: 2em;
+    left: 0;
+    right: 0;
+    width: 60%; 
+    z-index: 101; 
+    padding-right: 20px;
+    margin: 0 auto;
+    border-radius: .5em;
+    border: 1px solid white;
+    min-width: 250px;
+}
+
+.altiura-nav{
+    background-color: transparent;
+    color: white;
+}
+
+.altiura-nav img{
+    width: 40px;
+    margin-right: 1em;
+}
+
+.links-container{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav .home-link{
+    margin-right: auto;
+}
+
+#sidebar-active{
+    display:none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+
+#overlay {
+    display: none; 
+    position: fixed;
+    top: -68%;
+    right: -33.8%;
+    width: calc(100vw * 10);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 99; 
+}
+
+@media (max-width: 780px) {
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: -80%;
+        right: -205%; 
+        z-index: 100;
+        width: 400px;
+        color: white;
+        background-color: white;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.20);
+        transition: 0.3s ease-out;
+        height: 100vh;
+    }
+
+    nav {
+        top: 2em;
+        width: 60%; 
+        margin: 0 auto;
+        border-radius: .5em;
+        padding-right: 0;
+    }
+
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+        color: black;
+        background-color: white;
+    }
+
+    .open-sidebar-button{
+        fill: white;
+    }
+
+    .open-sidebar-button, .close-sidebar-button {
+        padding: 20px;
+        display: block;
+    }
+
+    #sidebar-active:checked ~ .links-container {
+        right: -60%;
+        z-index: 100;
+    }
+
+    #sidebar-active:checked ~ #overlay {
+        display: block;
+    }
+}
+
+@media (max-width: 400px){
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: -80%;
+        right: -655%; 
+        z-index: 100;
+        width: 400px;
+    }
+}
+

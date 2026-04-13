@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #FAF6F1;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  padding: 5em 4em;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.projects-page a {
+  text-decoration: none;
+  color: #545454;
+}
+
+.info-map {
+  display: flex;
+  margin: auto;
+  gap: 2em;
+}
+
+.map-feature {
+  border: .5em solid #545454;
+  box-shadow: 2px 2px 5px gray;
+}
+
+#map {
+  filter: grayscale(100%) invert(100) brightness(200%);
+  min-width: 540px;
+  height: 350px;
+}
+
+.gallery {
+  display: flex;
+  gap: .5em;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: .5em;
+}
+
+.big-picture {
+  flex: 1;
+  height: 100%;
+}
+
+.big-image-box {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.small-pictures {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: .5em;
+}
+
+.image-box {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.container img {
+  box-shadow: 2px 2px 5px gray;
+}
+
+.container .text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.text-container h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  text-align: justify;
+}
+
+.single-picture{
+  width: 50%;
+}

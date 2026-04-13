@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altiura - 27 Orchard</title>
+    <link rel="stylesheet" href="../src/styles/navbar.css">
+    <link rel="stylesheet" href="../src/styles/header.css">
+    <link rel="stylesheet" href="../src/styles/footer.css">
+    <link rel="stylesheet" href="../src/styles/projects.css">
+    <link rel="stylesheet" href="../src/styles/mobile-responsive.css">
+    <link rel="stylesheet" href="../src/styles/scroll-gradient.css">
+
+    <link rel="stylesheet" href="../src/styles/lightbox.css">
+
+    <link rel="icon" href="../src/icons/icon.png" type="image/x-icon" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <a class="altiura-nav"><img src="../src/icons/altiura-logo.png" alt="">Altiura</a>
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+
+    </label>
+
+    <label id="overlay" for="sidebar-active"></label>
+
+    
+    <div class="links-container">
+      <label for="sidebar-active"  class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+      </label>
+      
+      
+      <a href="../index.html">Home</a>
+      <a href="../projects-list.html">Projects</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+
+
+
+  <header class="header">
+    <img src="../src/images/Altiura-projects-header.jpg" alt=""/>
+    <div class="header-content">
+      <h2>Projects</h2>
+    </div>
+  </header>
+ 
+
+
+  <main class="projects-page">
+   <a href="javascript:history.back()" class="back-button"><span>&#8592;</span> Back</a>
+    <div class="info-map">
+      <div class="text-container">
+          <h2>27 Orchard</h2>
+        
+        <p>Situated in the center of a bustling urban area, 27 Orchard blends modern living with great accessibility. Close to popular shopping centers, dining venues, and convenient transport options, this location is perfect for those looking for both ease of living and an energetic atmosphere.</p>
+      </div>
+
+      <div class="specific-project-container">
+        <div class="description"></div>
+        <div class="map-feature">
+          <div id="map" ></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery">
+    <div class="container">
+      <div class="big-picture">
+      <a href="../src/images/projects/27 ORCHARD/1.jpg" data-lightbox="27-orchard" data-title="Map of neighborhood">
+        <img src="../src/images/projects/27 ORCHARD/1.jpg" alt="Map of neighborhood" class="big-image-box" />
+      </a>
+    </div>
+      <div class="small-pictures">
+        <a href="../src/images/projects/27 ORCHARD/2.jpg" data-lightbox="27-orchard" data-title="27 Orchard">
+          <img src="../src/images/projects/27 ORCHARD/2.jpg" alt="27 Orchard" class="image-box" />
+        </a>
+        <a href="../src/images/projects/27 ORCHARD/3.jpg" data-lightbox="27-orchard" data-title="Kitchen 1">
+          <img src="../src/images/projects/27 ORCHARD/3.jpg" alt="Kitchen 1" class="image-box" />
+        </a>
+        <a href="../src/images/projects/27 ORCHARD/4.jpg" data-lightbox="27-orchard" data-title="Living Room 1">
+          <img src="../src/images/projects/27 ORCHARD/4.jpg" alt="Living Room 1" class="image-box" />
+        </a>
+        <a href="../src/images/projects/27 ORCHARD/5.jpg" data-lightbox="27-orchard" data-title="Bathroom 1">
+          <img src="../src/images/projects/27 ORCHARD/5.jpg" alt="Bathroom 1" class="image-box" />
+        </a>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="small-pictures">
+        <a href="../src/images/projects/27 ORCHARD/6.jpg" data-lightbox="27-orchard" data-title="Bathroom 1">
+          <img src="../src/images/projects/27 ORCHARD/6.jpg" alt="Bathroom 1" class="image-box" />
+        </a>
+        <a href="../src/images/projects/27 ORCHARD/7.jpg" data-lightbox="27-orchard" data-title="Bedroom 1">
+          <img src="../src/images/projects/27 ORCHARD/7.jpg" alt="Bedroom 1" class="image-box" />
+        </a>
+        <a href="../src/images/projects/27 ORCHARD/8.jpg" data-lightbox="27-orchard" data-title="Bedroom 2">
+          <img src="../src/images/projects/27 ORCHARD/8.jpg" alt="Bedroom 2" class="image-box" />
+        </a>
+        <a href="../src/images/projects/27 ORCHARD/9.jpg" data-lightbox="27-orchard" data-title="Kitchen 2">
+          <img src="../src/images/projects/27 ORCHARD/9.jpg" alt="Kitchen 2" class="image-box" />
+        </a>
+      </div>
+      <div class="big-picture">
+      <a href="../src/images/projects/27 ORCHARD/10.jpg" data-lightbox="27-orchard" data-title="Living Room 2">
+        <img src="../src/images/projects/27 ORCHARD/10.jpg" alt="Living Room 2" class="big-image-box" />
+      </a>
+    </div>
+    </div>
+  
+    <div class="container">
+      <div class="big-picture">
+      <a href="../src/images/projects/27 ORCHARD/11.jpg" data-lightbox="27-orchard" data-title="Bathroom 2">
+        <img src="../src/images/projects/27 ORCHARD/11.jpg" alt="Bathroom 2" class="big-image-box" />
+      </a>
+    </div>
+      <div class="small-pictures">
+        <a href="../src/images/projects/27 ORCHARD/12.jpg" data-lightbox="27-orchard" data-title="Bedroom 4">
+          <img src="../src/images/projects/27 ORCHARD/12.jpg" alt="Bedroom 4" class="image-box" />
+        </a>
+        <a href="../src/images/projects/27 ORCHARD/13.jpg" data-lightbox="27-orchard" data-title="Kitchen Finishes">
+          <img src="../src/images/projects/27 ORCHARD/13.jpg" alt="Kitchen Finishes" class="image-box" />
+        </a>
+        <a href="../src/images/projects/27 ORCHARD/14.jpg" data-lightbox="27-orchard" data-title="Supplies">
+          <img src="../src/images/projects/27 ORCHARD/14.jpg" alt="Supplies" class="image-box" />
+        </a>
+        <a href="../src/images/projects/27 ORCHARD/15.jpg" data-lightbox="27-orchard" data-title="Bathroom Finishes">
+          <img src="../src/images/projects/27 ORCHARD/15.jpg" alt="Bathroom Finishes" class="image-box" />
+        </a>
+      </div>
+    </div>
+  
+    <div class="container last-item">
+      <div class="small-pictures">
+        <a href="../src/images/projects/27 ORCHARD/16.jpg" data-lightbox="27-orchard" data-title="Supplies">
+          <img src="../src/images/projects/27 ORCHARD/16.jpg" alt="Supplies" class="image-box" />
+        </a>
+        <a href="../src/images/projects/27 ORCHARD/17.jpg" data-lightbox="27-orchard" data-title="BluePrint">
+          <img src="../src/images/projects/27 ORCHARD/17.jpg" alt="Blueprint" class="image-box" />
+        </a>
+        <a href="../src/images/projects/27 ORCHARD/18.jpg" data-lightbox="27-orchard" data-title="Blueprint">
+          <img src="../src/images/projects/27 ORCHARD/18.jpg" alt="Blueprint" class="image-box" />
+        </a>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<footer>
+  <div class="footer">
+  <div class="left-footer">
+    <div class="footer-logo">
+      <img src="../src/icons/altiura-logo-text.png" alt="altiura-logo">
+    </div>
+    <div class="location-contact">
+      <div class="location">
+        <h3>Location</h3>
+        <p class="footer-text nj">725 River Rd - Edgewater, NJ 07020</p>
+      </div>
+      <div class="contact">
+        <h3>Contact</h3>
+        <p class="footer-text email">Email: support@altiura.com</p>
+        <p class="footer-text tel">Tel: +1 (551) 751-1151</p>
+      </div>
+    </div>
+  </div>
+  <div class="right-footer">
+    <div class="follow-us">
+      <h3>Follow Us</h3>
+      <a href="https://www.facebook.com/OfficialAltiura" target="_blank"><img src="../src/icons/facebook.svg" alt="altiura-facebook"></a>
+      <a href="https://www.instagram.com/altiuragroup" target="_blank"><img src="../src/icons/instagram.svg" alt="altiura-instagram"></a>
+      <a href="https://www.linkedin.com/company/altiura-group" target="_blank"><img src="../src/icons/linkedin.svg" alt="altiura-linkedin"></a>
+    </div>
+  </div>
+</div>
+<div class="rights-reserved">
+  @2024 All Rights Reserved
+</div>
+
+</footer>
+<div class="gradient-indicator"></div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="../src/scripts/lightbox-plus-jquery.js"></script>
+<script src="../src/scripts/scroll-gradient.js"></script>
+<script>
+  const map = new maplibregl.Map({
+    style: 'https://tiles.openfreemap.org/styles/bright',
+    center: [-73.9916, 40.7154],
+    zoom: 16.6,
+    container: 'map',
+  })
+
+  $(document).ready(function() {
+$('#open-modal')
+    .css('cursor', 'pointer')
+    .click(function(e) {
+        e.preventDefault();
+        $('body').css('overflow', 'hidden');
+    });
+$('#close-modal')
+    .css('cursor', 'pointer')
+    .click(function(e) {
+        e.preventDefault();
+        $('body').css('overflow', 'auto');
+    });
+});
+
+
+</script>
+</body>
+
+</html>
+
