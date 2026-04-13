@@ -1,4 +1,22 @@
-const BASE = "https://altiurarentals.com/src/images/projects/BERGENLINE AVENUE";
+const CARD_IMAGES = {
+  weehawken: "/listings/cards/weehawken.jpg",
+  soho: "/listings/cards/soho-nyc.jpg",
+  northBergen: "/listings/cards/8516-3rd-Ave.jpg",
+  grand: "/listings/cards/bergeline-avenue.png",
+  orchard: "/listings/cards/27-orchard.png",
+  greaterNewYork: "/listings/cards/greater-new-york.jpg",
+};
+
+const GRAND_GALLERY = "/listings/561-grand";
+
+const projectGalleryImages = [
+  { src: CARD_IMAGES.weehawken, alt: "Weehawken residence exterior" },
+  { src: CARD_IMAGES.soho, alt: "SoHo neighborhood exterior" },
+  { src: CARD_IMAGES.northBergen, alt: "North Bergen residence exterior" },
+  { src: CARD_IMAGES.grand, alt: "561 Grand Avenue exterior" },
+  { src: CARD_IMAGES.orchard, alt: "27 Orchard exterior" },
+  { src: CARD_IMAGES.greaterNewYork, alt: "Greater New York skyline" },
+];
 
 export interface Listing {
   slug: string;
@@ -36,16 +54,19 @@ export const listings: Listing[] = [
     parking: "2 Spots",
     outdoor: "Private Patio",
     schoolDistrict: "Blue-Ribbon",
-    heroImage: `${BASE}/1.jpg`,
+    heroImage: `${GRAND_GALLERY}/17.png`,
     galleryImages: [
-      { src: `${BASE}/2.jpg`, alt: "Living room" },
-      { src: `${BASE}/3.jpg`, alt: "Kitchen" },
-      { src: `${BASE}/4.jpg`, alt: "Bedroom" },
-      { src: `${BASE}/5.jpg`, alt: "Bathroom" },
-      { src: `${BASE}/6.jpg`, alt: "Master suite" },
-      { src: `${BASE}/7.jpg`, alt: "Common area" },
-      { src: `${BASE}/8.jpg`, alt: "Dining area" },
-      { src: `${BASE}/9.jpg`, alt: "Entrance" },
+      { src: `${GRAND_GALLERY}/1.jpg`, alt: "Kitchen" },
+      { src: `${GRAND_GALLERY}/2.jpg`, alt: "Kitchen" },
+      { src: `${GRAND_GALLERY}/3.jpg`, alt: "Hallway" },
+      { src: `${GRAND_GALLERY}/4.jpg`, alt: "Bedroom" },
+      { src: `${GRAND_GALLERY}/5.jpg`, alt: "Kitchen" },
+      { src: `${GRAND_GALLERY}/6.jpg`, alt: "Bathroom" },
+      { src: `${GRAND_GALLERY}/10.jpg`, alt: "Den" },
+      { src: `${GRAND_GALLERY}/11.jpg`, alt: "Bathroom" },
+      { src: `${GRAND_GALLERY}/12.jpg`, alt: "Common stairs" },
+      { src: `${GRAND_GALLERY}/13.jpg`, alt: "Bedroom" },
+      { src: `${GRAND_GALLERY}/14.jpg`, alt: "Den" },
     ],
     description:
       "A luxury multi-family home designed for multi-generational living across four floors. The upper unit offers 4 bedrooms, an attic, and private spaces bathed in natural light. The first-floor and basement unit features 5 bedrooms and 2 bathrooms. A modern 2-car garage, additional uncovered parking, and a generous patio complete the property. Located in Leonia\u2019s sought-after community with access to blue-ribbon schools.",
@@ -67,17 +88,8 @@ export const listings: Listing[] = [
     parking: "1 Spot",
     outdoor: "Shared Terrace",
     schoolDistrict: "Fairview Public",
-    heroImage: `${BASE}/2.jpg`,
-    galleryImages: [
-      { src: `${BASE}/3.jpg`, alt: "Living room" },
-      { src: `${BASE}/4.jpg`, alt: "Kitchen" },
-      { src: `${BASE}/5.jpg`, alt: "Bedroom" },
-      { src: `${BASE}/6.jpg`, alt: "Bathroom" },
-      { src: `${BASE}/7.jpg`, alt: "Common area" },
-      { src: `${BASE}/8.jpg`, alt: "Dining area" },
-      { src: `${BASE}/9.jpg`, alt: "Entrance" },
-      { src: `${BASE}/1.jpg`, alt: "Exterior" },
-    ],
+    heroImage: CARD_IMAGES.northBergen,
+    galleryImages: projectGalleryImages,
     description:
       "A refined two-bedroom condominium on Bergen Boulevard offering elegant finishes and an effortless commute to Manhattan. Hardwood floors, stainless appliances, and oversized windows define the interior. The shared terrace provides a communal outdoor retreat. Steps from local dining, parks, and express bus service to the city.",
     mapEmbedUrl:
@@ -98,17 +110,8 @@ export const listings: Listing[] = [
     parking: "2 Spots",
     outdoor: "Private Deck",
     schoolDistrict: "Cliffside Park",
-    heroImage: `${BASE}/3.jpg`,
-    galleryImages: [
-      { src: `${BASE}/4.jpg`, alt: "Living room" },
-      { src: `${BASE}/5.jpg`, alt: "Kitchen" },
-      { src: `${BASE}/6.jpg`, alt: "Primary bedroom" },
-      { src: `${BASE}/7.jpg`, alt: "Bathroom" },
-      { src: `${BASE}/8.jpg`, alt: "Den" },
-      { src: `${BASE}/9.jpg`, alt: "Dining area" },
-      { src: `${BASE}/1.jpg`, alt: "Exterior" },
-      { src: `${BASE}/2.jpg`, alt: "Deck" },
-    ],
+    heroImage: CARD_IMAGES.weehawken,
+    galleryImages: projectGalleryImages,
     description:
       "A three-story townhouse steps from the iconic Palisades ridge, offering sweeping views of the Hudson and Manhattan skyline from a private deck. Three spacious bedrooms, two full baths, an attached garage, and an open-plan living level make this an exceptional find in one of Bergen County\u2019s most coveted addresses.",
     mapEmbedUrl:
@@ -129,17 +132,8 @@ export const listings: Listing[] = [
     parking: "3 Spots",
     outdoor: "Rooftop Terrace",
     schoolDistrict: "Edgewater",
-    heroImage: `${BASE}/4.jpg`,
-    galleryImages: [
-      { src: `${BASE}/5.jpg`, alt: "Living room" },
-      { src: `${BASE}/6.jpg`, alt: "Kitchen" },
-      { src: `${BASE}/7.jpg`, alt: "Primary suite" },
-      { src: `${BASE}/8.jpg`, alt: "Second bedroom" },
-      { src: `${BASE}/9.jpg`, alt: "Bathroom" },
-      { src: `${BASE}/1.jpg`, alt: "Rooftop terrace" },
-      { src: `${BASE}/2.jpg`, alt: "Dining" },
-      { src: `${BASE}/3.jpg`, alt: "Entrance" },
-    ],
+    heroImage: CARD_IMAGES.greaterNewYork,
+    galleryImages: projectGalleryImages,
     description:
       "A landmark multi-family residence perched above the Hudson waterfront in Edgewater, New Jersey. Four generous bedrooms across three floors culminate in a rare private rooftop terrace with unobstructed Manhattan views. Designed for the discerning tenant who demands space, quality, and proximity to the city without the noise.",
     mapEmbedUrl:
@@ -160,17 +154,8 @@ export const listings: Listing[] = [
     parking: "1 Spot",
     outdoor: "Juliet Balcony",
     schoolDistrict: "Fort Lee",
-    heroImage: `${BASE}/5.jpg`,
-    galleryImages: [
-      { src: `${BASE}/6.jpg`, alt: "Living room" },
-      { src: `${BASE}/7.jpg`, alt: "Kitchen" },
-      { src: `${BASE}/8.jpg`, alt: "Bedroom" },
-      { src: `${BASE}/9.jpg`, alt: "Bathroom" },
-      { src: `${BASE}/1.jpg`, alt: "Balcony view" },
-      { src: `${BASE}/2.jpg`, alt: "Dining nook" },
-      { src: `${BASE}/3.jpg`, alt: "Hallway" },
-      { src: `${BASE}/4.jpg`, alt: "Exterior" },
-    ],
+    heroImage: CARD_IMAGES.soho,
+    galleryImages: projectGalleryImages,
     description:
       "An intimate two-bedroom condominium in the heart of Fort Lee, moments from the George Washington Bridge. Clean lines, contemporary finishes, and a Juliet balcony with river glimpses define this carefully curated residence. Ideal for professionals seeking style, convenience, and a streamlined connection to Manhattan.",
     mapEmbedUrl:
