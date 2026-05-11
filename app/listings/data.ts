@@ -101,8 +101,8 @@ export const listings: Listing[] = [
     address: "Weehawken",
     city: "Weehawken",
     state: "NJ",
-    price: null,
-    beds: 0,
+    price: 4000,
+    beds: 3,
     baths: 1,
     type: "Residence",
     floors: "—",
@@ -123,8 +123,8 @@ export const listings: Listing[] = [
     address: "SoHo, NYC",
     city: "New York",
     state: "NY",
-    price: null,
-    beds: 0,
+    price: 10000,
+    beds: 3,
     baths: 1,
     type: "Residence",
     floors: "—",
@@ -145,8 +145,8 @@ export const listings: Listing[] = [
     address: "8516 3rd Ave",
     city: "Brooklyn",
     state: "NY",
-    price: null,
-    beds: 0,
+    price: 2200,
+    beds: 2,
     baths: 1,
     type: "Residence",
     floors: "—",
@@ -162,6 +162,9 @@ export const listings: Listing[] = [
       "https://www.openstreetmap.org/export/embed.html?bbox=-74.0400%2C40.6100%2C-73.9800%2C40.6500&layer=mapnik&marker=40.6300%2C-74.0100",
     coords: "40.6300 N, 74.0100 W",
   },
+];
+
+export const archivedListings: Listing[] = [
   {
     slug: "27-orchard",
     address: "27 Orchard",
